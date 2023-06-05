@@ -19,7 +19,7 @@ int main()
 
 long factorial(long num)
 {
-    long pro;
+    long pro=1;
 
     for(int i=1;i<=num;i++)
     {
