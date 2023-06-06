@@ -6,7 +6,7 @@
 int main()
 {
     int rem,sum=0,i;
-
+    printf("The numbers between 1 and 500 which are armstrong are as follows: \n");
     for(i=10;i<=500;i++)
     {
         int org=i;
