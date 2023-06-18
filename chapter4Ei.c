@@ -7,7 +7,7 @@
      1       4         6        4      1
 */
 
-//This pattern is also known as Pascal's Triangle
+//This pattern is also known as Pascal's Triangle.
 
 #include <stdio.h>
 
