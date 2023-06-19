@@ -2,11 +2,13 @@
 
 #include <stdio.h>
 
-void decimalToOctal(int decimalNumber) {
+void decimalToOctal(int decimalNumber)
+{
     int octalNumber = 0;
     int multiplier = 1;
 
-    while (decimalNumber != 0) {
+    while (decimalNumber != 0)
+    {
         int remainder = decimalNumber % 8;
         octalNumber += remainder * multiplier;
         decimalNumber /= 8;
@@ -16,7 +18,8 @@ void decimalToOctal(int decimalNumber) {
     printf("Octal equivalent: %d\n", octalNumber);
 }
 
-int main() {
+int main()
+{
     int decimalNumber;
 
     printf("Enter an integer: ");
@@ -26,4 +29,3 @@ int main() {
 
     return 0;
 }
-
