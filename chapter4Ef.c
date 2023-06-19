@@ -3,16 +3,16 @@
 29 * 2 =58
 */
 
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     int num;
     printf("Enter a number to find its multiplication table: ");
-    scanf("%d",&num);
+    scanf("%d", &num);
 
-    for(int i=1;i<=12;i++)
+    for (int i = 1; i <= 12; i++)
     {
-        printf("%d * %d = %d\n",num,i,(num*i));
+        printf("%d * %d = %d\n", num, i, (num * i));
     }
 
     return 0;

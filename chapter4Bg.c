@@ -1,19 +1,19 @@
 /*Write a program to enter numbers till the user wants. At the end it should display the count of positive, negative and zeroes entered.*/
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int pos,nos,zeros,num;
+    int pos, nos, zeros, num;
     char choice;
 
-    while(choice!='n')
+    while (choice != 'n')
     {
         printf("Do you want to enter a number : [y]es or [n]o ");
         getchar();
-        scanf("%c",&choice);
-        if(choice=='n')
+        scanf("%c", &choice);
+        if (choice == 'n')
         {
             break;
         }
@@ -21,19 +21,19 @@ int main()
         else
         {
             printf("Enter a number: ");
-            scanf("%d",&num);
+            scanf("%d", &num);
 
-            if(num>0)
+            if (num > 0)
             {
                 pos++;
             }
 
-            else if(num==0)
+            else if (num == 0)
             {
                 zeros++;
             }
 
-            else if(num<0)
+            else if (num < 0)
             {
                 nos++;
             }
@@ -44,9 +44,9 @@ int main()
             }
         }
     }
-        printf("Positive numbers %d\n",pos);
-        printf("Negative numbers %d\n",nos);
-        printf("Zeroes %d\n",zeros);
+    printf("Positive numbers %d\n", pos);
+    printf("Negative numbers %d\n", nos);
+    printf("Zeroes %d\n", zeros);
 
-        return 0;
+    return 0;
 }
